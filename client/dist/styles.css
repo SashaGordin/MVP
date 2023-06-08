@@ -1,0 +1,261 @@
+body {
+  font-family: 'Jost', sans-serif;
+  background-color: #D2CCA1df;
+  margin: 0px;
+}
+
+
+.nav {
+  background-color: #387780;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.1rem 1rem;
+  font-family: 'Jost', sans-serif;
+}
+
+.main_info {
+  /* background-color: #D2CCA1; */
+  /* opacity: .3; */
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  margin: 0 5rem;
+}
+
+.site_title {
+  font-size: 1.5rem;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title_home{
+  font-size: 2.2rem;
+  margin: 2rem 2rem 2rem 0rem;
+}
+
+/* .main_info {
+  background-color: white;
+  margin: 0 5rem;
+} */
+
+.contractor_form {
+  margin: 2 0rem;
+}
+
+.top_level_home {
+  margin: 7rem 0rem;
+}
+
+.form_item {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.form_label {
+  width: 20rem;
+}
+
+.address_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom_three {
+  flex-direction: row;
+}
+
+.search_bar {
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+}
+
+.search_input {
+  border: none;
+  background: white;
+  margin: 0;
+  padding: 1rem;
+  width: 30rem;
+  font-size: 1rem;
+  border-radius: .3rem 0rem 0rem .3rem;
+}
+
+.search-input:focus {
+  outline:none;
+}
+
+.search_button {
+  text-indent: -999px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: 0rem .3rem .3rem 0rem;
+  background-color: #E83151;
+  width: 4rem;
+  /* background: #E83151 url("../dist/icons/search.png") no-repeat center; */
+}
+
+.custom_file_upload {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.label_text {
+  margin-right: 5px;
+}
+
+.upload_icon {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #e2e2e2;
+  cursor: pointer;
+}
+
+.upload_icon:before {
+  content: '+';
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+#file_input {
+  display: none;
+}
+
+.photo {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.skills_input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.skill_contianer {
+  flex-direction: row;
+}
+
+.skill_search {
+  width: auto;
+}
+
+.skill {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 4px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.remove_button {
+  margin-left: 4px;
+  border: none;
+  background-color: transparent;
+  color: gray;
+  cursor: pointer;
+}
+
+.input_field {
+  margin-top: 8px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.wrapper {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  gap:2rem;
+  justify-content: center;
+}
+
+.contractor_card {
+  overflow:hidden;
+  box-shadow:0 2px 20px gray;
+  border-radius: .3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition:transform 200ms ease-in;
+  background: #F9F6EE;
+}
+
+.card_img{
+  height:12rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card_title {
+  padding: 1rem;
+  margin: 0px;
+}
+
+.card_description {
+  padding: 0 1rem;
+  margin: 0px;
+  font-weight: 200;
+}
+
+.card_pricing {
+  padding: 0 1rem;
+}
+
+.card_btn {
+  padding:1rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+  border: 2px solid red;
+  background: transparent;
+  color: red;
+  border-radius: .3rem;
+  transition: background 200ms ease-in;
+  width: -webkit-fill-available;
+}
+
+.contractor_card:hover{
+  transform: scale(1.02);
+}
+
+.card_btn:hover {
+  background: red;
+  color:white;
+}
+
+.popular_services {
+  font-size: 1.7rem;
+  margin: 3.5rem 3.5rem 3.5rem 0rem;
+}
+
+.popular_services_title {
+  margin: 0rem 0rem 2.5rem 0rem;
+}
