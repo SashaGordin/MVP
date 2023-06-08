@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 function SearchBar({ zip }) {
   const [search, setSearch] = useState('');
@@ -29,7 +31,9 @@ function SearchBar({ zip }) {
   return (
     <form onSubmit={submitHandler} className="search_bar">
       <input onChange={changeHandler} id="search_input" className="search_input" type="search" placeholder="Search for any service..." />
-      <button className="search_button" type="submit" />
+      <button className="search_button" type="submit">
+        <FontAwesomeIcon icon={faSearch} className="search_icon" />
+      </button>
     </form>
   );
 }

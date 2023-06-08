@@ -21,7 +21,7 @@ function ServicesList() {
     },
   ];
   return (
-    <div className="wrapper">
+    <div className="ps_wrapper">
       {services.map((service) => (
         // eslint-disable-next-line react/jsx-props-no-spreading, no-underscore-dangle
         <Service {...service} />

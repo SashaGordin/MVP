@@ -101,6 +101,7 @@ body {
 }
 
 .search_button {
+  position: relative;
   text-indent: -999px;
   overflow: hidden;
   padding: 0;
@@ -109,7 +110,16 @@ body {
   border-radius: 0rem .3rem .3rem 0rem;
   background-color: #E83151;
   width: 4rem;
-  /* background: #E83151 url("../dist/icons/search.png") no-repeat center; */
+  /* background: #E83151 url("https://www.clipartmax.com/png/small/74-742441_preamps-white-search-icon-svg.png") no-repeat center; */
+}
+
+.search_icon {
+  position:absolute;
+  top:50%;
+  left:1rem;
+  font-size: 1rem;
+  transform: translateY(-50%);
+  color: white;
 }
 
 .custom_file_upload {
@@ -253,9 +263,29 @@ body {
 
 .popular_services {
   font-size: 1.7rem;
-  margin: 3.5rem 3.5rem 3.5rem 0rem;
+  margin: 3.5rem 0rem;
 }
 
 .popular_services_title {
-  margin: 0rem 0rem 2.5rem 0rem;
+  margin: 0rem 0rem 1.5rem 0rem;
+}
+
+.ps_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 2rem;
+}
+
+.ps_card_img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.overlay {
+  position: absolute;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
 }

@@ -4,10 +4,12 @@ function Service(service) {
   const {
     name, imageURL,
   } = service;
-  console.log(imageURL);
   return (
     <div className="contractor_card">
-      <img className="card_img" src={imageURL} alt="bro" />
+      <img className="ps_card_img" src={imageURL} alt="bro" />
+      <div className="overlay">
+        <div>{name}</div>
+      </div>
     </div>
   );
 }
